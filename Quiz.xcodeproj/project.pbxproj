@@ -11,6 +11,14 @@
 		8AE360C92C4D68EC0072849C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE360C82C4D68EC0072849C /* ContentView.swift */; };
 		8AE360CB2C4D68EE0072849C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360CA2C4D68EE0072849C /* Assets.xcassets */; };
 		8AE360CE2C4D68EE0072849C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360CD2C4D68EE0072849C /* Preview Assets.xcassets */; };
+		8AE360DF2C4D7D2D0072849C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE360DE2C4D7D2D0072849C /* MainScreen.swift */; };
+		8AE360E12C4D7D860072849C /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE360E02C4D7D850072849C /* MainVM.swift */; };
+		8AE360E62C4D81A60072849C /* Fonts+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE360E52C4D81A60072849C /* Fonts+Ext.swift */; };
+		8AE360E82C4D847E0072849C /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360E72C4D847E0072849C /* Poppins-Bold.ttf */; };
+		8AE360ED2C4D848A0072849C /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360E92C4D848A0072849C /* Poppins-Regular.ttf */; };
+		8AE360EE2C4D848A0072849C /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360EA2C4D848A0072849C /* Poppins-Medium.ttf */; };
+		8AE360EF2C4D848A0072849C /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360EB2C4D848A0072849C /* Poppins-ExtraBold.ttf */; };
+		8AE360F02C4D848A0072849C /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AE360EC2C4D848A0072849C /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		8AE360C82C4D68EC0072849C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AE360CA2C4D68EE0072849C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE360CD2C4D68EE0072849C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AE360DE2C4D7D2D0072849C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		8AE360E02C4D7D850072849C /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		8AE360E52C4D81A60072849C /* Fonts+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Ext.swift"; sourceTree = "<group>"; };
+		8AE360E72C4D847E0072849C /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8AE360E92C4D848A0072849C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		8AE360EA2C4D848A0072849C /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		8AE360EB2C4D848A0072849C /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8AE360EC2C4D848A0072849C /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		8AE360F12C4D876B0072849C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +68,13 @@
 		8AE360C52C4D68EC0072849C /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				8AE360C62C4D68EC0072849C /* QuizApp.swift */,
 				8AE360C82C4D68EC0072849C /* ContentView.swift */,
-				8AE360CA2C4D68EE0072849C /* Assets.xcassets */,
+				8AE360D52C4D7BC90072849C /* Screens */,
+				8AE360D62C4D7BD10072849C /* Models */,
+				8AE360D92C4D7C310072849C /* Support */,
+				8AE360D82C4D7BF60072849C /* Views */,
+				8AE360E42C4D818D0072849C /* Extensions */,
+				8AE360D72C4D7BEE0072849C /* Resources */,
 				8AE360CC2C4D68EE0072849C /* Preview Content */,
 			);
 			path = Quiz;
@@ -67,6 +88,107 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8AE360D52C4D7BC90072849C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360DA2C4D7C790072849C /* Onboarding */,
+				8AE360DB2C4D7C7F0072849C /* Main */,
+				8AE360DD2C4D7C900072849C /* Calendar */,
+				8AE360DC2C4D7C8A0072849C /* Map */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8AE360D62C4D7BD10072849C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AE360D72C4D7BEE0072849C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360F12C4D876B0072849C /* Info.plist */,
+				8AE360E32C4D80F10072849C /* Fonts */,
+				8AE360CA2C4D68EE0072849C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AE360D82C4D7BF60072849C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AE360D92C4D7C310072849C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360C62C4D68EC0072849C /* QuizApp.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		8AE360DA2C4D7C790072849C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8AE360DB2C4D7C7F0072849C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360E22C4D7D880072849C /* Views */,
+				8AE360DE2C4D7D2D0072849C /* MainScreen.swift */,
+				8AE360E02C4D7D850072849C /* MainVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8AE360DC2C4D7C8A0072849C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8AE360DD2C4D7C900072849C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8AE360E22C4D7D880072849C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AE360E32C4D80F10072849C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360EB2C4D848A0072849C /* Poppins-ExtraBold.ttf */,
+				8AE360EA2C4D848A0072849C /* Poppins-Medium.ttf */,
+				8AE360E92C4D848A0072849C /* Poppins-Regular.ttf */,
+				8AE360EC2C4D848A0072849C /* Poppins-SemiBold.ttf */,
+				8AE360E72C4D847E0072849C /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8AE360E42C4D818D0072849C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AE360E52C4D81A60072849C /* Fonts+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +199,7 @@
 				8AE360BF2C4D68EC0072849C /* Sources */,
 				8AE360C02C4D68EC0072849C /* Frameworks */,
 				8AE360C12C4D68EC0072849C /* Resources */,
+				8AE360D42C4D7B1B0072849C /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -126,19 +249,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE360CE2C4D68EE0072849C /* Preview Assets.xcassets in Resources */,
+				8AE360F02C4D848A0072849C /* Poppins-SemiBold.ttf in Resources */,
+				8AE360E82C4D847E0072849C /* Poppins-Bold.ttf in Resources */,
 				8AE360CB2C4D68EE0072849C /* Assets.xcassets in Resources */,
+				8AE360ED2C4D848A0072849C /* Poppins-Regular.ttf in Resources */,
+				8AE360EF2C4D848A0072849C /* Poppins-ExtraBold.ttf in Resources */,
+				8AE360EE2C4D848A0072849C /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AE360D42C4D7B1B0072849C /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AE360BF2C4D68EC0072849C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE360DF2C4D7D2D0072849C /* MainScreen.swift in Sources */,
 				8AE360C92C4D68EC0072849C /* ContentView.swift in Sources */,
+				8AE360E62C4D81A60072849C /* Fonts+Ext.swift in Sources */,
 				8AE360C72C4D68EC0072849C /* QuizApp.swift in Sources */,
+				8AE360E12C4D7D860072849C /* MainVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +427,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Quiz/Preview Content\"";
 				DEVELOPMENT_TEAM = PQM24VR9VQ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quiz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quiz;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +444,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,12 +464,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Quiz/Preview Content\"";
 				DEVELOPMENT_TEAM = PQM24VR9VQ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quiz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quiz;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +481,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

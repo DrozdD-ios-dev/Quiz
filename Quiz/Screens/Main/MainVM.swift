@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainVM.swift
 //  Quiz
 //
 //  Created by Дрозд Денис on 21.07.2024.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainVM: View {
     var body: some View {
-        MainScreen()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    ContentView()
+    MainVM()
 }
