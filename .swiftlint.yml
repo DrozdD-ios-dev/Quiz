@@ -1,0 +1,17 @@
+disabled_rules:
+    - trailing_whitespace
+    - line_length
+    - comment_spacing
+    - unused_capture_list
+    - blanket_disable_command
+
+identifier_name:
+  min_length: # only min_length
+    error: 3
+  excluded: # excluded via string array
+    - vc
+    - id
+    - vm
+    - kg
+    - cm
+    - ft
