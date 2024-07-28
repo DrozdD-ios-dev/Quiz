@@ -1,10 +1,3 @@
-//
-//  Fonts+Ext.swift
-//  Quiz
-//
-//  Created by Дрозд Денис on 21.07.2024.
-//
-
 import SwiftUI
 
 enum FontType {
