@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DefaultButton: View {
     let text: String
+    let color: Color
     let action: () -> Void
     
     var body: some View {
@@ -12,7 +13,7 @@ struct DefaultButton: View {
                 .foregroundStyle(.black)
                 .padding(.vertical, 16)
                 .frame(maxWidth: .infinity)
-                .background(.greenLight)
+                .background(color)
                 .cornerRadius(25)
                 .padding(.horizontal, 16)
                 .font(.customFont(.poppins700, 16))
@@ -22,7 +23,7 @@ struct DefaultButton: View {
 }
 
 #Preview(body: {
-    DefaultButton(text: "Claim") {
+    DefaultButton(text: "Claim", color: .greenLight) {
         
     }
 })

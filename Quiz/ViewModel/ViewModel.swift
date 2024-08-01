@@ -1,5 +1,6 @@
 import SwiftUI
 import Combine
+import StoreKit
 
 final class ViewModel: ObservableObject {
     
@@ -89,6 +90,13 @@ final class ViewModel: ObservableObject {
         loadQuestions()
     }
     
+    func rateApp() {
+        guard let currentScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            return
+        }
+        SKStoreReviewController.requestReview(in: currentScene)
+    }
+    
     // MARK: - PlayScreen logic
     
     private func loadQuestions() {
@@ -164,11 +172,14 @@ final class ViewModel: ObservableObject {
         guard let resultCurrentDay = Int(currentDay) else { return }
         let savedDay = dateFormatter.string(from: user.currentDay)
         guard let resultSavedDay = Int(savedDay) else { return }
-        
+
         if resultCurrentDay - resultSavedDay == 1 {
             user.presentDay += 1
             user.openedPresentDay = false
         } else if resultCurrentDay > resultSavedDay {
+            user.presentDay = 1
+            user.openedPresentDay = false
+        } else if resultCurrentDay < resultSavedDay {
             user.presentDay = 1
             user.openedPresentDay = false
         } else if resultCurrentDay == resultSavedDay {

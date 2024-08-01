@@ -45,10 +45,8 @@ struct OnboardingScreen: View {
                     .padding(.trailing, 48)
                 }
                 
-                Button {
+                BaseMenuButton(color: .greenLight, icon: Image(.Icons.arrowRight)) {
                     vm.goBackToRoot()
-                } label: {
-                    BaseMenuButton(color: .greenLight, icon: Image(.Icons.arrowRight))
                 }
                 .offset(y: -36)
             }

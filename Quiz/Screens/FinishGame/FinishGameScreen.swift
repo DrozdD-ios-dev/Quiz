@@ -56,7 +56,7 @@ struct FinishGameScreen: View {
                 }
                 Spacer()
                 
-                DefaultButton(text: "Claim") {
+                DefaultButton(text: "Claim", color: .greenLight) {
                     vm.resetProgress()
                     vm.goBackToRoot()
                 }

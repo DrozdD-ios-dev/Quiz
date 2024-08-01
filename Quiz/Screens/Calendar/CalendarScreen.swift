@@ -64,7 +64,8 @@ struct CalendarScreen: View {
                 }
                 .padding(.bottom, 30)
                 
-                DefaultButton(text: "Claim") {
+                DefaultButton(text: "Claim",
+                              color: !vm.user.openedPresentDay ? .greenLight : .gray167) {
                     vm.updatePresentDay()
                     vm.goBack()
                 }

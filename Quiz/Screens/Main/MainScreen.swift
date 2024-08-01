@@ -25,7 +25,15 @@ struct MainScreen: View {
                             .foregroundStyle(.white)
                     }
                 }
-                Spacer()
+                
+                HStack {
+                    Spacer()
+                    
+                    BaseMenuButton(color: .pinkLight, icon: Image(.Icons.starUp)) {
+                        vm.rateApp()
+                    }
+                    .padding(.horizontal)
+                }
                 
                 Image(.Images.swords)
                     .frame(width: 100, height: 100)
@@ -46,16 +54,20 @@ struct MainScreen: View {
                 Spacer()
                 
                 HStack(spacing: 16) {
-                    Button {
-                        vm.showCalendarScreen()
-                    } label: {
-                        BaseMenuButton(color: .redLight, icon: Image(.Icons.calendar))
+                    BaseMenuButton(color: .yellowLight, icon: Image(.Icons.service)) {
+                        print("Terms")
                     }
                     
-                    Button {
+                    BaseMenuButton(color: .redLight, icon: Image(.Icons.calendar)) {
+                        vm.showCalendarScreen()
+                    }
+                    
+                    BaseMenuButton(color: .greenLight, icon: Image(.Icons.map)) {
                         vm.showMapScreen()
-                    } label: {
-                        BaseMenuButton(color: .greenLight, icon: Image(.Icons.map))
+                    }
+                    
+                    BaseMenuButton(color: .pinkLight, icon: Image(.Icons.privacy)) {
+                        print("Privacy")
                     }
                 }
                 Spacer()

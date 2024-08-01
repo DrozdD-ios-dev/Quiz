@@ -3,21 +3,29 @@ import SwiftUI
 struct BaseMenuButton: View {
     var color: Color
     var icon: Image
+    let action: () -> Void
+    
     var body: some View {
-        ZStack {
-            color
-                .frame(width: 72, height: 72)
-                .border(.black)
-                .cornerRadius(25)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(.black, lineWidth: 2)
-                )
-            icon
+        Button {
+            action()
+        } label: {
+            ZStack {
+                color
+                    .frame(width: 72, height: 72)
+                    .border(.black)
+                    .cornerRadius(28)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 28)
+                            .stroke(.black, lineWidth: 2)
+                    )
+                icon
+            }
         }
     }
 }
 
 #Preview {
-    BaseMenuButton(color: .greenLight, icon: Image(.Icons.arrowRight))
+    BaseMenuButton(color: .greenLight, icon: Image(.Icons.arrowRight)) {
+        
+    }
 }

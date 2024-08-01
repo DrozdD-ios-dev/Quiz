@@ -6,6 +6,7 @@ struct QuizApp: App {
     var body: some Scene {
         WindowGroup {
             AppView()
+                .preferredColorScheme(.light)
         }
     }
 }

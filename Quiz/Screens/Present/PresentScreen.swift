@@ -52,7 +52,7 @@ struct PresentScreen: View {
                     }
                     Spacer()
                     
-                    DefaultButton(text: "Claim") {
+                    DefaultButton(text: "Claim", color: .greenLight) {
                         vm.goBack()
                     }
                 }

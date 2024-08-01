@@ -21,12 +21,6 @@ struct MapScreen: View {
                         .padding()
                         Spacer()
                         
-                        Button {
-                            // something
-                        } label: {
-                            Image(.Icons.dots)
-                        }
-                        .padding()
                     }
                     Text("Map")
                         .customFont(.poppins500, 20)
